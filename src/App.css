@@ -1,7 +1,18 @@
+html{
+  scroll-behavior: smooth;
+}
 .App {
   text-align: center;
-}
 
+}
+.footer {
+  background-image: linear-gradient(
+    179.54deg,
+    #04001e,
+    rgb(30, 7, 63) 56.42%,
+    #E41476 113.51%
+  );
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
