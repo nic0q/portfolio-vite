@@ -3,8 +3,8 @@ import React from "react"
 
 export const Home = () => {
   return (
-    <div className="flex w-full h-screen bg-[#04001E] items-center">
-      <div className="text-lg ml-[18%] font-normal">
+    <div id="home" className="flex w-full h-screen bg-[#04001E] items-center">
+      <div className="text-lg ml-[3%] sm:ml-[14%] font-normal">
         <p className="ml-1 text-pink-600">Hi, my name is</p>
         <h2 className="text-4xl sm:text-7xl text-white font-bold">
           Nícolas Farfán
@@ -25,7 +25,9 @@ export const Home = () => {
           >
             <FiLinkedin className="m-3" />
           </a>
-          <FiTwitter className="m-3" />
+          <a href="https://twitter.com/CheneauxNicolas" target={"_blank"}>
+            <FiTwitter className="m-3" />
+          </a>
         </div>
       </div>
     </div>

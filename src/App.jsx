@@ -4,11 +4,15 @@ import { Home } from "./components/Home"
 import { Projects } from "./components/Projects"
 import { Footer } from "./components/Footer"
 import { Contact } from "./components/Contact"
+import { AboutMe } from "./components/AboutMe"
+import Skills from "./components/Skills"
 function App() {
   return (
     <div>
       <Navbar></Navbar>
       <Home></Home>
+      <AboutMe></AboutMe>
+      <Skills></Skills>
       <Projects></Projects>
       <Contact></Contact>
       <Footer></Footer>
