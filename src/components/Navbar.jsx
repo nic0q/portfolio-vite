@@ -11,7 +11,7 @@ export const Navbar = () => {
 
   return (
     <div>
-      <div className="z-10 fixed pt w-full h-[65px] flex items-center px-4 bg-transparent justify-end text-xl md:bg-[#06002D]">
+      <div className="z-10 fixed pt w-full h-[65px] flex items-center px-w bg-transparent justify-end text-xl md:bg-[#06002D]">
         <ul className={"hidden md:flex text-white items-center pr-32"}>
           <li>
             <a href="#aboutMe">About Me</a>
@@ -32,7 +32,7 @@ export const Navbar = () => {
           </li>
         </ul>
         <div
-          className="text-white md:hidden z-10 text-3xl"
+          className="text-white md:hidden z-10 text-3xl m-3"
           onClick={handleClick}
         >
           {nav ? <FaTimes /> : <GiHamburgerMenu />}

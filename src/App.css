@@ -5,11 +5,11 @@ html{
   text-align: center;
 
 }
-.shadow {
+.card:hover{
   box-shadow:
-    0 0 10px #fff,
-    0px 0 30px #f0f,
-    0px 0 20px #0ff;
+  0 0 5px #fff,
+  0px 0 20px #f0f,
+  0px 0 20px #0ff;
 }
 .footer {
   background-image: linear-gradient(

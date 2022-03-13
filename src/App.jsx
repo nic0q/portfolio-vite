@@ -11,7 +11,7 @@ function App() {
     <div>
       <Navbar></Navbar>
       <Home></Home>
-      <AboutMe></AboutMe>
+      {/* <AboutMe></AboutMe> */}
       <Skills></Skills>
       <Projects></Projects>
       <Contact></Contact>
