@@ -5,7 +5,7 @@ export const Home = () => {
   return (
     <div id="home" className="flex w-full h-screen bg-[#04001E] items-center">
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
-        <p className="ml-[2px] text-2xl text-pink-600 md:ml-[4px] ">Hi, my name is</p>
+        <p className="ml-[2px] text-2xl text-pink-600 md:ml-[5px] ">Hi, my name is</p>
         <h2 className="text-4xl md:text-8xl text-white font-bold">
           Nícolas Farfán
         </h2>

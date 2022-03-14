@@ -11,7 +11,7 @@ export const Projects = () => {
     <div id="projects" className="bg-[#04001E] text-gray-100 md:pt-16">
       <div className="font-semibold max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <SubTitulo title={"Projects"}></SubTitulo>
-        <div className="w-full grid gap-12 grid-cols-1 md:grid-cols-3 py-12">
+        <div className="w-full grid gap-12 grid-cols-1 lg:grid-cols-3 sm:grid-cols-2 py-12">
           <ProjectCard
             img="https://user-images.githubusercontent.com/91075814/158098717-a7328b8d-cc68-4337-8dea-7b7954cc2758.png"
             name="Memory Game"
@@ -56,7 +56,14 @@ export const Projects = () => {
               ></ProjectCard>
             </>
           ) : (
-            ""
+            <div className=" visible lg:hidden">
+              <ProjectCard
+                img="https://user-images.githubusercontent.com/91075814/158070244-6966f9c6-e8e0-48cc-a204-45243539e959.png"
+                name="Memory Game"
+                details="A simple Memory Game with the basic rules s ssssssssssssss a ssssss"
+                tech={["html", "css", "react"]}
+              ></ProjectCard>
+            </div>
           )}
         </div>
         <div className="flex items-center justify-center mt-2 mb-14">

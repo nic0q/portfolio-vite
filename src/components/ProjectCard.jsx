@@ -18,7 +18,7 @@ export const ProjectCard = ({
   tech = [],
 }) => {
   return (
-    <div className="card pb-2 bg-[#1F1F3A] border-solid border-2 border-purple-600 rounded-xl flex md:h-96 md:w-78 md:hover:scale-125 duration-500 shadow-xl shadow-[#ae70e7] w-full ">
+    <div className="card pb-2 bg-[#1F1F3A] border-solid border-2 border-purple-600 rounded-xl flex md:h-96 md:w-78 lg:hover:scale-125 duration-500 shadow-xl shadow-[#ae70e7] w-full ">
       <div className=" w-screen">
         <img
           className="rounded-xl w-screen md:h-[40%]"

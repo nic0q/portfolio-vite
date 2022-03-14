@@ -5,7 +5,6 @@ import Logo from "../assets/Images/Logo.png"
 export const Navbar = () => {
   const [nav, setNav] = useState(false)
   const [scroll, setScroll] = useState(false)
-
   const handleClick = () => {
     setNav(!nav)
   }
