@@ -19,7 +19,7 @@ export const Projects = () => {
             tech={["react"]}
           ></ProjectCard>
           <ProjectCard
-            img="https://user-images.githubusercontent.com/91075814/158096348-1b893b3f-d922-4ac3-8e92-f20026f1d0bf.gif"
+            img="https://user-images.githubusercontent.com/91075814/158098717-a7328b8d-cc68-4337-8dea-7b7954cc2758.png"
             name="Linked List Animation"
             details="A LinkedList animation visualizer with delete, add, change speed features."
             page="https://nic0q.github.io/Random-Animation/"
@@ -56,7 +56,7 @@ export const Projects = () => {
               ></ProjectCard>
             </>
           ) : (
-            <div className=" visible lg:hidden">
+            <div className="lg:hidden visible">
               <ProjectCard
                 img="https://user-images.githubusercontent.com/91075814/158070244-6966f9c6-e8e0-48cc-a204-45243539e959.png"
                 name="Memory Game"

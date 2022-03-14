@@ -1,5 +1,4 @@
 import { useState } from "react"
-// import { useScroll } from "../Hooks/useScroll"
 import "../assets/Styles/Hamburger.css"
 
 export default function Hamburger({ click }) {
@@ -7,24 +6,8 @@ export default function Hamburger({ click }) {
   const handleClick = () => {
     setActive(!active)
   }
-  // const { y, x, scrollDirection } = useScroll()
-
-  // const styles = {
-  //   active: {
-  //     visibility: "visible",
-  //     transition: "all 0.3s",
-  //   },
-  //   hidden: {
-  //     visibility: "hidden",
-  //     transition: "all 0.3s",
-  //     transform: "translateY(-100%)",
-  //   },
-  // }
   return (
-    <div
-      className="rounded-xl bg-[#04001E] p-[6px] pb-[3px] mr-1"
-      // style={scrollDirection === "down" ? styles.active : styles.hidden}
-    >
+    <div className="rounded-xl bg-[#04001E] p-[6px] pb-[3px] mr-1">
       <button
         onClick={handleClick}
         className={

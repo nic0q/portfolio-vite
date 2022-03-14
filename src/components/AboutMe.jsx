@@ -4,7 +4,7 @@ import { RiEnglishInput } from "react-icons/ri" // Delete in the future if is un
 export const AboutMe = () => {
   return (
     <div id="aboutMe" className="bg-[#04001E] w-full text-gray-100">
-      <div className="max-w-[1000px] mx-auto p-4 pt-20 flex flex-col justify-center w-full">
+      <div className="max-w-[1000px] mx-auto p-4 sm:pt-20 flex flex-col justify-center w-full">
         <SubTitulo title={"About Me"}></SubTitulo>
         {/* Main Container => Img + Text */}
         <div className="lg:flex-row flex flex-col mt-16 items-center">

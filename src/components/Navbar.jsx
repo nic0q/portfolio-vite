@@ -17,12 +17,15 @@ export const Navbar = () => {
         {nav ? <Hamburger click={scroll} /> : <Hamburger />}
       </div>
       {/* I've to consider hide or show de Logo in the phone mode */}
-      <img
-        className="justify-start md:flex  hidden"
-        src={Logo}
-        alt="Logo Image"
-        style={{ width: "50px" }}
-      />
+      <a href="#home">
+        <img
+          className="justify-start md:flex  hidden"
+          src={Logo}
+          alt="Logo Image"
+          style={{ width: "50px" }}
+        />
+      </a>
+
       <ul className={"hidden md:flex text-white items-center"}>
         <li className="">
           <a href="#aboutMe">About Me</a>
