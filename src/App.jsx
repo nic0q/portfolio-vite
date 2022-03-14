@@ -6,6 +6,8 @@ import { Footer } from "./components/Footer"
 import { Contact } from "./components/Contact"
 import { AboutMe } from "./components/AboutMe"
 import Skills from "./components/Skills"
+// Color Pallete: #10042D #160435 #04001E
+
 function App() {
   return (
     <div>

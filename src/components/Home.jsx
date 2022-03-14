@@ -10,7 +10,7 @@ export const Home = () => {
           Nícolas Farfán
         </h2>
         <h2 className="my-3 text-xl md:text-3xl md:ml-1 font-bold text-[#8892b0]">
-          I'm a Full Stack Developer
+          I'm a FrontEnd Developer
         </h2>
         <div className="flex  items-center text-white text-4xl">
           <button className="shadow-lg  hover:shadow-[#f129ae] hover:scale-110 duration-200 font-light my-4 ml-1 mr-5 bg-pink-600 border-2 border-none px-4 text-xl p-2 rounded-full">

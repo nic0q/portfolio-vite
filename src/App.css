@@ -11,9 +11,20 @@ html{
   0px 0 20px #f0f,
   0px 0 20px #0ff;
 }
+::placeholder{
+  font-weight:600;
+}
 .footer {
   background-image: linear-gradient(
     179.54deg,
+    #04001E,
+    rgb(30, 7, 63) 56.42%,
+    #E41476 113.51%
+  );
+}
+.mainPage{
+  background-image: linear-gradient(
+    5deg,
     #04001e,
     rgb(30, 7, 63) 56.42%,
     #E41476 113.51%
