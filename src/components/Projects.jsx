@@ -59,12 +59,12 @@ export const Projects = () => {
             ""
           )}
         </div>
-        <div className="flex items-center justify-center mt-6 mb-10">
+        <div className="flex items-center justify-center mt-2 mb-14">
           <svg
             className={
               loadMore
                 ? "hidden"
-                : "cursor-pointer w-14 h-14 bg-[#1F1F3A] border-[1px] border-[#75618d] border-solid rounded-full p-1 text-[#f177ba] animate-bounce"
+                : "cursor-pointer w-14 h-14 bg-[#1F1F3A] border-[1px] border-[#75618d] border-solid rounded-full p-1 text-[#da71b7] animate-bounce"
             }
             fill="none"
             strokeLinecap="round"

@@ -4,7 +4,7 @@ export const Contact = () => {
   return (
     <div
       id="contact"
-      className="w-full p-16 flex flex-col text-white footer items-center justify-center text-center"
+      className="w-full pb-16 flex flex-col text-white footer items-center justify-center text-center"
     >
       <form className="md:max-w-[570px] max-w-[400px] w-full">
         <SubTitulo title={"Contact"}></SubTitulo>

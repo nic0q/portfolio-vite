@@ -1,17 +1,31 @@
 import React from "react"
 import { useState } from "react"
 import Hamburger from "./Hamburger"
-
+import Logo from "../assets/Images/Logo.png"
 export const Navbar = () => {
   const [nav, setNav] = useState(false)
+  const [scroll, setScroll] = useState(false)
+
   const handleClick = () => {
     setNav(!nav)
   }
-
   return (
-    <div className="z-10 fixed w-full h-[70px] flex items-center px-w bg-transparent justify-end text-xl md:bg-[#06002D]">
-      <ul className={"hidden md:flex text-white items-center pr-32"}>
-        <li>
+    <div className="z-10 fixed w-full h-[70px] flex items-center px-w bg-transparent justify-evenly text-xl md:bg-[#06002D]">
+      <div
+        className="text-white md:hidden z-10 text-3xl m-3 flex fixed bottom-0 right-0"
+        onClick={handleClick}
+      >
+        {nav ? <Hamburger click={scroll} /> : <Hamburger />}
+      </div>
+      {/* I've to consider hide or show de Logo in the phone mode */}
+      <img
+        className="justify-start md:flex  hidden"
+        src={Logo}
+        alt="Logo Image"
+        style={{ width: "50px" }}
+      />
+      <ul className={"hidden md:flex text-white items-center"}>
+        <li className="">
           <a href="#aboutMe">About Me</a>
         </li>
         <li>
@@ -29,13 +43,9 @@ export const Navbar = () => {
           </button>
         </li>
       </ul>
-      <div
-        className="text-white md:hidden z-10 text-3xl m-3"
-        onClick={handleClick}
-      >
-        {nav ? <Hamburger /> : <Hamburger />}
-      </div>
+
       {/* Mobile Responsibe */}
+
       <ul
         className={
           nav
@@ -44,22 +54,22 @@ export const Navbar = () => {
         }
       >
         <li className="py-8 font-semibold">
-          <a onClick={handleClick} href="#aboutMe">
+          <a href="#aboutMe" onClick={handleClick}>
             About Me
           </a>
         </li>
         <li className="py-8 font-semibold">
-          <a onClick={handleClick} href="#skills">
+          <a href="#skills" onClick={handleClick}>
             Skills
           </a>
         </li>
         <li className="py-8 font-semibold">
-          <a onClick={handleClick} href="#projects">
+          <a href="#projects" onClick={handleClick}>
             Projects
           </a>
         </li>
         <li className="py-8 font-semibold">
-          <a onClick={handleClick} href="#contact">
+          <a href="#contact" onClick={handleClick}>
             Contact
           </a>
         </li>
