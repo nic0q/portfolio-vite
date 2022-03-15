@@ -6,15 +6,17 @@ import {
   FaLink,
   FaGithub,
   FaNodeJs,
+  FaLaravel,
+  FaBootstrap,
 } from "react-icons/fa"
-import { SiJavascript } from "react-icons/si"
+import { SiJavascript, SiPostgresql, SiMongodb } from "react-icons/si"
 
 export const ProjectCard = ({
   name = "Project Name",
-  img,
+  img = "",
   details = "Project Details",
-  github,
-  page,
+  github = "",
+  page = "",
   tech = [],
 }) => {
   return (
@@ -24,19 +26,27 @@ export const ProjectCard = ({
           className="rounded-xl w-screen md:h-[40%]"
           src={img}
           alt="Imagen del Proyecto"
-        ></img>
+        ></img> 
         <div className="p-4">
-          <h2 className="text-2xl pb-4 font-bold ">{name}</h2>
+          <h2 className="text-2xl pb-4 font-bold text-center ">{name}</h2>
           <div className="bg-[#262644] p-1">
             <p className="text-lg font-light text-center">{details}</p>
           </div>
           <div className="flex justify-center text-white">
-            <a href={github} target={"_blank"}>
-              <FaGithub className="m-3 text-4xl"></FaGithub>
-            </a>
-            <a href={page} target={"_blank"}>
-              <FaLink className="m-3 text-4xl"></FaLink>
-            </a>
+            {github === "" ? (
+              ""
+            ) : (
+              <a href={github} target={"_blank"}>
+                <FaGithub className="m-3 text-4xl"></FaGithub>
+              </a>
+            )}
+            {page === "" ? (
+              ""
+            ) : (
+              <a href={page} target={"_blank"}>
+                <FaLink className="m-3 text-4xl"></FaLink>
+              </a>
+            )}
           </div>
           {
             <div className="flex text-purple-300 relative md:items-end justify-start mt-[-43px] md:flex-row flex-wrap w-[50px]">
@@ -51,6 +61,14 @@ export const ProjectCard = ({
                   <SiJavascript key={e} className="mb-1 mr-1 text-xl" />
                 ) : e === "node" ? (
                   <FaNodeJs key={e} className="mb-1 mr-1 text-xl" />
+                ) : e === "laravel" ? (
+                  <FaLaravel key={e} className="mb-1 mr-1 text-xl" />
+                ) : e === "postgresql" ? (
+                  <SiPostgresql key={e} className="mb-1 mr-1 text-xl" />
+                ) : e === "bootstrap" ? (
+                  <FaBootstrap key={e} className="mb-1 mr-1 text-xl" />
+                ) : e === "mongodb" ? (
+                  <FaBootstrap key={e} className="mb-1 mr-1 text-xl" />
                 ) : (
                   ""
                 )

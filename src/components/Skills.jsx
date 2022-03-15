@@ -7,6 +7,7 @@ import Git from "../assets/Images/git.png"
 import Mongo from "../assets/Images/mongo.png"
 import PostgreSQL from "../assets/Images/postgresql.png"
 import TailWind from "../assets/Images/tailwind.png"
+import Laravel from "../assets/Images/laravel.png"
 import { SubTitulo } from "./SubTitulo"
 import { Skill } from "./Skill"
 
@@ -15,7 +16,7 @@ export default function Skills() {
     <div id="skills" className="w-full bg-[#04001E] text-gray-100 md:pt-16">
       <div className="font-semibold max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <SubTitulo title={"Skills"}></SubTitulo>
-        <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-6 text-center py-8">
+        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-6 text-center py-8">
           <Skill
             shadowColor={"shadow-[#e9e1bd] hover:shadow-[#F16529]"}
             name="HTML"
@@ -46,18 +47,23 @@ export default function Skills() {
             name="Node.js"
             img={Node}
           ></Skill>
-          <Skill
+          {/* <Skill
             shadowColor={"shadow-[#91da87] hover:shadow-[#94ec61] "}
             name="MongoDB"
             img={Mongo}
-          ></Skill>
+          ></Skill> */}
           <Skill
-            shadowColor={"shadow-[#5d82af] shadow-[#5d82af] "}
+            shadowColor={"shadow-[#5d82af] hover:shadow-[#5d82af] "}
             name="PostgreSQL"
             img={PostgreSQL}
           ></Skill>
           <Skill
-            shadowColor={"shadow-[#5d82af] shadow-[#5d82af]"}
+            shadowColor={"shadow-[#FF291A] hover:shadow-[#FF291A] "}
+            name="Laravel"
+            img={Laravel}
+          ></Skill>
+          <Skill
+            shadowColor={"shadow-[#44A8B3] hover:shadow-[#44A8B3]"}
             name="TailWind"
             img={TailWind}
           ></Skill>

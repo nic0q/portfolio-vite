@@ -4,6 +4,7 @@ import { SubTitulo } from "./SubTitulo"
 
 export const Projects = () => {
   const [loadMore, setLoadMore] = useState(false)
+
   const handleClick = () => {
     setLoadMore(true)
   }
@@ -13,55 +14,64 @@ export const Projects = () => {
         <SubTitulo title={"Projects"}></SubTitulo>
         <div className="w-full grid gap-12 grid-cols-1 lg:grid-cols-3 sm:grid-cols-2 py-12">
           <ProjectCard
-            img="https://user-images.githubusercontent.com/91075814/158098717-a7328b8d-cc68-4337-8dea-7b7954cc2758.png"
+            img="https://user-images.githubusercontent.com/91075814/158311732-11eaf0f5-6b4f-4c2e-b9c3-b63401a8bad0.gif"
             name="Memory Game"
             details="A typical memory game with a menu token's skins and grid personalization."
+            page="https://nic0q.github.io/Memory-Game/"
+            github={"https://github.com/nic0q/Memory-Game"}
             tech={["react"]}
           ></ProjectCard>
           <ProjectCard
-            img="https://user-images.githubusercontent.com/91075814/158098717-a7328b8d-cc68-4337-8dea-7b7954cc2758.png"
+            img="https://user-images.githubusercontent.com/91075814/158310072-2786877e-ab62-4f6d-b2be-d45e257da05a.gif"
             name="Linked List Animation"
-            details="A LinkedList animation visualizer with delete, add, change speed features."
-            page="https://nic0q.github.io/Random-Animation/"
-            github={"https://github.com/nic0q/Linked-List-Animation"}
+            details="A LinkedList animation visualizer with delete, add, change speed, and more custom features."
+            page="https://nic0q.github.io/Linked-List-Animation/"
+            github={"https://nic0q.github.io/Linked-List-Animation/"}
             tech={["html", "css", "js"]}
           ></ProjectCard>
           <ProjectCard
-            img="https://user-images.githubusercontent.com/91075814/158070244-6966f9c6-e8e0-48cc-a204-45243539e959.png"
-            name="Random Questionary"
-            details="Single Page Questions app, consults an external API, and gives feedback at the end."
-            page="https://nic0q.github.io/Random-Questionary/"
-            github={"https://github.com/nic0q/Random-Questionary"}
-            tech={["react"]}
+            img="https://user-images.githubusercontent.com/91075814/158313040-ac313fa3-be60-4357-aa47-b5825dcf8035.gif"
+            name="Mist"
+            details="Fullstack Laravel web, db migrations, CRUD, UX interface, Authentication, Shop, Hierarchy."
+            github={"https://github.com/nic0q/Mist"}
+            tech={["laravel", "postgresql", "bootstrap"]}
           ></ProjectCard>
           {loadMore ? (
             <>
               <ProjectCard
-                img="https://user-images.githubusercontent.com/91075814/158070244-6966f9c6-e8e0-48cc-a204-45243539e959.png"
-                name="Memory Game"
-                details="A simple Memory Game with the basic rules s ssssssssssssss a ssssss"
-                tech={["html", "css", "react"]}
+                img="https://user-images.githubusercontent.com/91075814/158312217-c030f4de-cb5c-4000-b699-7304fc94ac2f.gif"
+                name="Tik Tak Toe"
+                details="Basic Multiplayer TikTakToe with JavascriptVanilla, good practices, functional programming"
+                github={"https://github.com/nic0q/Tik-Tak-Toe"}
+                page={"https://nic0q.github.io/Tik-Tak-Toe/"}
+                tech={["html", "css", "js"]}
               ></ProjectCard>
               <ProjectCard
-                img="https://user-images.githubusercontent.com/91075814/158070244-6966f9c6-e8e0-48cc-a204-45243539e959.png"
-                name="Memory Game"
-                details="A simple Memory Game with the basic rules s ssssssssssssss a ssssss"
-                tech={["html", "css", "react", "node"]}
+                img="https://user-images.githubusercontent.com/91075814/158311197-12638b3d-020a-41bc-9bc6-867cbacdda4f.gif"
+                name="Random Questionary"
+                details="Consults an API to get random questions, at the end give the right and wrong answers."
+                page="https://nic0q.github.io/Memory-Game/"
+                github={"https://github.com/nic0q/Memory-Game"}
+                tech={["react"]}
               ></ProjectCard>
               <ProjectCard
-                img="https://user-images.githubusercontent.com/91075814/158070244-6966f9c6-e8e0-48cc-a204-45243539e959.png"
-                name="Memory Game"
-                details="A simple Memory Game with the basic rules s ssssssssssssss a ssssss"
-                tech={["html", "css", "react"]}
+                img="https://user-images.githubusercontent.com/91075814/158309891-cced5767-0792-4226-9c35-0944cd1915b9.gif"
+                name="¿Cuánto Me Falta?"
+                details="An interface that calcules the weighted average of all grades, allows ADD, DELETE grades."
+                page="https://nic0q.github.io/Cuanto-Me-Falta/"
+                github={"https://github.com/nic0q/Cuanto-Me-Falta"}
+                tech={["html", "css", "js"]}
               ></ProjectCard>
             </>
           ) : (
             <div className="lg:hidden visible">
               <ProjectCard
-                img="https://user-images.githubusercontent.com/91075814/158070244-6966f9c6-e8e0-48cc-a204-45243539e959.png"
-                name="Memory Game"
-                details="A simple Memory Game with the basic rules s ssssssssssssss a ssssss"
-                tech={["html", "css", "react"]}
+                img="https://user-images.githubusercontent.com/91075814/158312217-c030f4de-cb5c-4000-b699-7304fc94ac2f.gif"
+                name="Tik Tak Toe"
+                details="Basic Multiplayer TikTakToe with JavascriptVanilla, good practices, functional programming"
+                github={"https://github.com/nic0q/Tik-Tak-Toe"}
+                page={"https://nic0q.github.io/Tik-Tak-Toe/"}
+                tech={["html", "css", "js"]}
               ></ProjectCard>
             </div>
           )}
