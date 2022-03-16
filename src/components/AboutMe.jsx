@@ -8,10 +8,10 @@ export const AboutMe = () => {
         <SubTitulo title={"About Me"}></SubTitulo>
         {/* Main Container => Img + Text */}
         <div className="flex-row flex mt-16">
-          <h2 className="text-4xl mr-20">
+          {/* <h2 className="text-4xl mr-20">
             Hi. I'm Nícolas, nice to meet you. Please take a look around.
-          </h2>
-          <h3 className="text-xl text-justify mx-10 mt-1">
+          </h2> */}
+          <h3 className="text-3xl text-justify mt-1">
             I'm a Informatics Engineering student and appasionate for the Web
             Development from Chile, in the last summer I've build some projects
             to improve my skills in web sites and aplications development, I
